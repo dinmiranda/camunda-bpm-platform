@@ -11,7 +11,7 @@
   </parent>
 
   <properties>
-    <test.includes />
+    <test.includes/>
     <!-- without a special test profile we don't want to exclude anything, this expressions should never match -->
     <test.excludes>$.</test.excludes>
     <historyLevel>full</historyLevel>
@@ -36,7 +36,7 @@
     <dependency>
       <groupId>org.apache.tomcat</groupId>
       <artifactId>tomcat-jdbc</artifactId>
-      <version>7.0.33</version>
+      <version>7.0.108</version>
     </dependency>
 
     <dependency>
@@ -98,9 +98,9 @@
         <!-- default values for properties -->
         <numberOfThreads>2</numberOfThreads>
         <numberOfRuns>100</numberOfRuns>
-        <testWatchers />
-        <processEnginePlugins />
-        <watchActivities />
+        <testWatchers/>
+        <processEnginePlugins/>
+        <watchActivities/>
         <test.excludes>query</test.excludes>
       </properties>
 
@@ -142,13 +142,13 @@
                 </goals>
                 <configuration>
                   <tasks>
-                    <echo message="Generating reports" />
+                    <echo message="Generating reports"/>
                     <copy todir="${basedir}/target/reports/images" flatten="true">
                       <fileset dir="${basedir}/src/test/resources">
-                        <include name="**/*.png" />
+                        <include name="**/*.png"/>
                       </fileset>
                     </copy>
-                    <java classname="org.camunda.bpm.qa.performance.engine.benchmark.BenchmarkReport" classpathref="maven.test.classpath" />
+                    <java classname="org.camunda.bpm.qa.performance.engine.benchmark.BenchmarkReport" classpathref="maven.test.classpath"/>
                   </tasks>
                 </configuration>
               </execution>
@@ -170,9 +170,9 @@
         <!-- default values for properties -->
         <numberOfThreads>1</numberOfThreads>
         <numberOfRuns>1</numberOfRuns>
-        <testWatchers />
-        <processEnginePlugins />
-        <watchActivities />
+        <testWatchers/>
+        <processEnginePlugins/>
+        <watchActivities/>
         <test.excludes>query</test.excludes>
       </properties>
 
@@ -213,13 +213,13 @@
                 </goals>
                 <configuration>
                   <tasks>
-                    <echo message="Generating reports" />
+                    <echo message="Generating reports"/>
                     <copy todir="${basedir}/target/reports/images" flatten="true">
                       <fileset dir="${basedir}/src/test/resources">
-                        <include name="**/*.png" />
+                        <include name="**/*.png"/>
                       </fileset>
                     </copy>
-                    <java classname="org.camunda.bpm.qa.performance.engine.benchmark.BenchmarkReport" classpathref="maven.test.classpath" />
+                    <java classname="org.camunda.bpm.qa.performance.engine.benchmark.BenchmarkReport" classpathref="maven.test.classpath"/>
                   </tasks>
                 </configuration>
               </execution>
@@ -241,7 +241,7 @@
         <numberOfRuns>1</numberOfRuns>
         <testWatchers>org.camunda.bpm.qa.performance.engine.sqlstatementlog.StatementLogPerfTestWatcher</testWatchers>
         <processEnginePlugins>org.camunda.bpm.qa.performance.engine.sqlstatementlog.StatementLogProcessEnginePlugin</processEnginePlugins>
-        <watchActivities />
+        <watchActivities/>
         <test.excludes>query</test.excludes>
       </properties>
 
@@ -281,13 +281,13 @@
                 </goals>
                 <configuration>
                   <tasks>
-                    <echo message="Generating reports in ${basedir}/target/reports/" />
+                    <echo message="Generating reports in ${basedir}/target/reports/"/>
                     <copy todir="${basedir}/target/reports/images" flatten="true">
                       <fileset dir="${basedir}/src/test/resources">
-                        <include name="**/*.png" />
+                        <include name="**/*.png"/>
                       </fileset>
                     </copy>
-                    <java classname="org.camunda.bpm.qa.performance.engine.sqlstatementlog.SqlStatementLogReport" classpathref="maven.test.classpath" />
+                    <java classname="org.camunda.bpm.qa.performance.engine.sqlstatementlog.SqlStatementLogReport" classpathref="maven.test.classpath"/>
                   </tasks>
                 </configuration>
               </execution>
@@ -305,9 +305,9 @@
       <properties>
         <loadGenerator.numberOfIterations>10000</loadGenerator.numberOfIterations>
         <loadGenerator.colorOutput>false</loadGenerator.colorOutput>
-        <testWatchers />
-        <processEnginePlugins />
-        <watchActivities />
+        <testWatchers/>
+        <processEnginePlugins/>
+        <watchActivities/>
         <skip.tests>true</skip.tests>
       </properties>
 
@@ -332,8 +332,8 @@
                 </goals>
                 <configuration>
                   <tasks>
-                    <echo message="Generating load" />
-                    <java classname="org.camunda.bpm.qa.performance.engine.query.DefaultLoadGenerator" classpathref="maven.test.classpath" failonerror="true" />
+                    <echo message="Generating load"/>
+                    <java classname="org.camunda.bpm.qa.performance.engine.query.DefaultLoadGenerator" classpathref="maven.test.classpath" failonerror="true"/>
                   </tasks>
                 </configuration>
               </execution>
@@ -359,7 +359,7 @@
         <numberOfRuns>1</numberOfRuns>
         <testWatchers>org.camunda.bpm.qa.performance.engine.sqlstatementlog.StatementLogPerfTestWatcher</testWatchers>
         <processEnginePlugins>org.camunda.bpm.qa.performance.engine.sqlstatementlog.StatementLogProcessEnginePlugin</processEnginePlugins>
-        <watchActivities />
+        <watchActivities/>
         <test.includes>query</test.includes>
         <skip.tests>false</skip.tests>
       </properties>
@@ -400,13 +400,13 @@
                 </goals>
                 <configuration>
                   <tasks>
-                    <echo message="Generating reports in ${basedir}/target/reports/" />
+                    <echo message="Generating reports in ${basedir}/target/reports/"/>
                     <copy todir="${basedir}/target/reports/images" flatten="true">
                       <fileset dir="${basedir}/src/test/resources">
-                        <include name="**/*.png" />
+                        <include name="**/*.png"/>
                       </fileset>
                     </copy>
-                    <java classname="org.camunda.bpm.qa.performance.engine.sqlstatementlog.SqlStatementLogReport" classpathref="maven.test.classpath" />
+                    <java classname="org.camunda.bpm.qa.performance.engine.sqlstatementlog.SqlStatementLogReport" classpathref="maven.test.classpath"/>
                   </tasks>
                 </configuration>
               </execution>
@@ -426,9 +426,9 @@
         <!-- default values for properties -->
         <numberOfThreads>1</numberOfThreads>
         <numberOfRuns>100</numberOfRuns>
-        <testWatchers />
-        <processEnginePlugins />
-        <watchActivities />
+        <testWatchers/>
+        <processEnginePlugins/>
+        <watchActivities/>
       </properties>
 
       <build>
@@ -468,13 +468,13 @@
                 </goals>
                 <configuration>
                   <tasks>
-                    <echo message="Generating reports" />
+                    <echo message="Generating reports"/>
                     <copy todir="${basedir}/target/reports/images" flatten="true">
                       <fileset dir="${basedir}/src/test/resources">
-                        <include name="**/*.png" />
+                        <include name="**/*.png"/>
                       </fileset>
                     </copy>
-                    <java classname="org.camunda.bpm.qa.performance.engine.framework.activitylog.ActivityCountReporter" classpathref="maven.test.classpath" />
+                    <java classname="org.camunda.bpm.qa.performance.engine.framework.activitylog.ActivityCountReporter" classpathref="maven.test.classpath"/>
                   </tasks>
                 </configuration>
               </execution>
