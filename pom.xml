@@ -6,7 +6,7 @@
     <artifactId>camunda-bpm-release-parent</artifactId>
     <version>2.2.1</version>
     <!-- do not remove empty tag - http://jira.codehaus.org/browse/MNG-4687 -->
-    <relativePath />
+    <relativePath/>
   </parent>
 
   <groupId>org.camunda.bpm</groupId>
@@ -27,7 +27,7 @@
     <!-- These properties are used in both the BOM as well as camunda-parent and subprojects -->
     <version.mybatis>3.5.6</version.mybatis>
     <version.joda-time>2.1</version.joda-time>
-    <version.uuid-generator>3.2.0</version.uuid-generator>
+    <version.uuid-generator>4.0</version.uuid-generator>
     <version.camunda.commons>1.10.0</version.camunda.commons>
     <version.camunda.connect>1.5.2</version.camunda.connect>
     <version.camunda.spin>1.10.1</version.camunda.spin>
