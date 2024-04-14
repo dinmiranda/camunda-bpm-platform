@@ -308,7 +308,7 @@
       <dependency>
         <groupId>org.jruby</groupId>
         <artifactId>jruby-complete</artifactId>
-        <version>9.1.17.0</version>
+        <version>9.3.0.0</version>
       </dependency>
 
       <dependency>
