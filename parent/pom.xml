@@ -41,7 +41,7 @@
 
     <!-- application servers -->
     <version.jboss.as>7.2.0.Final</version.jboss.as>
-    <version.wildfly>20.0.1.Final</version.wildfly>
+    <version.wildfly>33.0.2.Final</version.wildfly>
     <version.wildfly.core>12.0.3.Final</version.wildfly.core>
 
     <!-- This version is mirrored in the external task client.
@@ -56,7 +56,7 @@
     <version.jboss-javaee-spec>3.0.2.Final</version.jboss-javaee-spec>
 
     <!-- OSGi bundles properties -->
-    <camunda.artifact />
+    <camunda.artifact/>
     <camunda.osgi.import.camunda.spin.version>version="[$(version;==;${camunda.spin.version.clean}),$(version;=+;${camunda.spin.version.clean}))"</camunda.osgi.import.camunda.spin.version>
     <camunda.osgi.import.camunda.connect.version>version="[$(version;==;${camunda.connect.version.clean}),$(version;=+;${camunda.connect.version.clean}))"</camunda.osgi.import.camunda.connect.version>
     <camunda.osgi.import.camunda.commons.version>version="[$(version;==;${camunda.commons.version.clean}),$(version;=+;${camunda.commons.version.clean}))"</camunda.osgi.import.camunda.commons.version>
@@ -65,15 +65,15 @@
     <camunda.osgi.import.default.version>[$(version;==;$(@)),$(version;+;$(@)))</camunda.osgi.import.default.version>
     <camunda.osgi.import.defaults>
     </camunda.osgi.import.defaults>
-    <camunda.osgi.import.before.defaults />
-    <camunda.osgi.import.additional />
+    <camunda.osgi.import.before.defaults/>
+    <camunda.osgi.import.additional/>
     <camunda.osgi.import.pkg>
       ${camunda.osgi.import.before.defaults},
       ${camunda.osgi.import.defaults},
       ${camunda.osgi.import.additional},
       *
     </camunda.osgi.import.pkg>
-    <camunda.osgi.activator />
+    <camunda.osgi.activator/>
     <camunda.osgi.failok>false</camunda.osgi.failok>
     <camunda.osgi.export>${camunda.osgi.export.pkg};${camunda.osgi.version};-noimport:=true</camunda.osgi.export>
     <!--
@@ -81,16 +81,16 @@
     <camunda.osgi.private.pkg>${camunda.artifact}*.impl</camunda.osgi.private.pkg>
     -->
     <camunda.osgi.export.pkg>${camunda.artifact}*</camunda.osgi.export.pkg>
-    <camunda.osgi.private.pkg />
+    <camunda.osgi.private.pkg/>
     <camunda.osgi.version>version=${project.version}</camunda.osgi.version>
     <camunda.osgi.split.pkg>-split-package:=first</camunda.osgi.split.pkg>
     <camunda.osgi.import>${camunda.osgi.import.pkg}</camunda.osgi.import>
-    <camunda.osgi.dynamic />
+    <camunda.osgi.dynamic/>
     <camunda.osgi.symbolic.name>${camunda.artifact}</camunda.osgi.symbolic.name>
     <camunda.osgi.exclude.dependencies>false</camunda.osgi.exclude.dependencies>
     <camunda.osgi.remove.headers>Ignore-Package,Include-Resource,Private-Package,Bundle-DocURL</camunda.osgi.remove.headers>
     <camunda.osgi.include.resource>{maven-resources}</camunda.osgi.include.resource>
-    <camunda.osgi.embed />
+    <camunda.osgi.embed/>
   </properties>
 
   <dependencyManagement>
