@@ -37,7 +37,7 @@
     "angular-scenario": "1.8.2",
     "angular-touch": "1.8.2",
     "angular-translate": "2.18.4",
-    "bootstrap": "3.4.1",
+    "bootstrap": "4.0.0",
     "bpmn-font": "0.10.0",
     "bpmn-js": "8.1.0",
     "camunda-webapp-translations": "git://github.com/camunda/camunda-webapp-translations#master",
